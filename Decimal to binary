@@ -1,0 +1,12 @@
+int DecimalToBinary(int n)
+{
+    int sum = 0;
+    int mult = 1;
+    while(n != 0){
+        int rem = n%2;
+        sum = sum + rem*mult;
+        n = n/2;
+        mult = mult*10;
+    }
+    return sum;
+}
